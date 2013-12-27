@@ -1,13 +1,14 @@
 public class GetSosu {
 	
 	static int NextSosu(int sosu) {
-		int nextsosu = sosu + 1;
+		int nextsosu;
 		boolean hakken;
 		if (sosu == 1) {
 			nextsosu = 2;
 		} else if (sosu == 2) {
 			nextsosu = 3;
 		} else {
+			nextsosu = sosu + 1;
 			while (true) {
 				hakken = true;
 				for (int i = 2; i <= sosu / 2 + 1; ++i) {
